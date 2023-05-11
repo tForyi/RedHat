@@ -9,7 +9,12 @@ RUN \
     nano \
     net-tools \
     netcat \
+    yum \
     sudo && \
-  echo "**** install code-server ****"
+  echo "root:Ww12345!" | chpasswd && \
+  echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
+  echo "**** install completed ****" && \
   
 EXPOSE 22
+EXPOSE 8080
+EXPOSE 3306
