@@ -12,4 +12,4 @@ RUN \
   echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
   echo "**** install completed ****" && \
   
-EXPOSE 8443
+EXPOSE 22
