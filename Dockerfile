@@ -9,9 +9,12 @@ RUN \
     nano \
     net-tools \
     netcat \
+    yum \
     sudo && \
   echo "root:Ww12345!" | chpasswd && \
   echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-  echo "**** install completed ****" && \
+  echo "**** install completed ****"
   
 EXPOSE 22
+EXPOSE 3306
+EXPOSE 80
