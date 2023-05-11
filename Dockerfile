@@ -9,7 +9,6 @@ RUN \
     nano \
     net-tools \
     netcat \
-    yum \
     sudo && \
   echo "root:Ww12345!" | chpasswd && \
   echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
