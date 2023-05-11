@@ -1,0 +1,14 @@
+---
+version: "3.8"
+services:
+  code-server:
+    build: .
+    privileged: true
+    tty: true
+    stdin_open: true
+    user: '0'
+    volumes:
+      - ./coder:/data
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:false
