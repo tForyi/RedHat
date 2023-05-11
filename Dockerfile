@@ -1,4 +1,4 @@
-FROM redhat/ubi8
+FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
 RUN \
   echo "**** install runtime dependencies ****" && \
   apt-get update && \
