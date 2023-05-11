@@ -8,7 +8,7 @@ services:
     stdin_open: true
     user: '0'
     volumes:
-      - ./coder:/data
+      - ./res:/data
     restart: unless-stopped
     security_opt:
       - no-new-privileges:false
