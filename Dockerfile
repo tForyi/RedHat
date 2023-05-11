@@ -10,8 +10,6 @@ RUN \
     net-tools \
     netcat \
     sudo && \
-  echo "root:Ww12345" | chpasswd && \
-  echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-  echo "**** install completed ****"
+  echo "**** install code-server ****"
   
 EXPOSE 22
