@@ -1,1 +1,1 @@
-# Redhat
+# Ubuntu
